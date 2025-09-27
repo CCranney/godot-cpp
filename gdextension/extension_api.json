@@ -3,9 +3,9 @@
 		"version_major": 4,
 		"version_minor": 5,
 		"version_patch": 0,
-		"version_status": "stable",
-		"version_build": "official",
-		"version_full_name": "Godot Engine v4.5.stable.official",
+		"version_status": "beta",
+		"version_build": "custom_build",
+		"version_full_name": "Godot Engine v4.5.beta.custom_build",
 		"precision": "single"
 	},
 	"builtin_class_sizes": [
@@ -234914,7 +234914,7 @@
 						},
 						{
 							"name": "VIEWPORT_VRS_MAX",
-							"value": 3
+							"value": 4
 						}
 					]
 				},
@@ -334646,6 +334646,17 @@
 					}
 				},
 				{
+					"name": "get_viewports_are_hdr",
+					"is_const": false,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 2240911060,
+					"return_value": {
+						"type": "bool"
+					}
+				},
+				{
 					"name": "trigger_haptic_pulse",
 					"is_const": false,
 					"is_vararg": false,
@@ -334869,6 +334880,24 @@
 							"name": "far",
 							"type": "float",
 							"meta": "double"
+						}
+					]
+				},
+				{
+					"name": "get_viewport_for_view",
+					"is_const": false,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 344583160,
+					"return_value": {
+						"type": "Rect2i"
+					},
+					"arguments": [
+						{
+							"name": "view",
+							"type": "int",
+							"meta": "uint32"
 						}
 					]
 				},
@@ -335178,6 +335207,25 @@
 							"name": "z_far",
 							"type": "float",
 							"meta": "double"
+						}
+					]
+				},
+				{
+					"name": "_get_viewport_for_view",
+					"is_const": false,
+					"is_static": false,
+					"is_required": false,
+					"is_vararg": false,
+					"is_virtual": true,
+					"hash": 344583160,
+					"return_value": {
+						"type": "Rect2i"
+					},
+					"arguments": [
+						{
+							"name": "view",
+							"type": "int",
+							"meta": "uint32"
 						}
 					]
 				},
